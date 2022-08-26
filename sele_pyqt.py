@@ -1,5 +1,6 @@
 # ************************** man hinh loai 2 *************************
 import sys
+# pip install pyqt5
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from gui import Ui_MainWindow
 
@@ -16,9 +17,9 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.uic = Ui_MainWindow()
         self.uic.setupUi(self)
-        self.uic.pushButton.clicked.connect(self.run_selenium)
+        self.uic.pushButton.clicked.connect(self.run_sele)
 
-    def run_selenium(self):
+    def run_sele(self):
         driver = webdriver.Chrome(service=service)
         driver.get("http://www.python.org")
         elem = driver.find_element(By.NAME, "q")
