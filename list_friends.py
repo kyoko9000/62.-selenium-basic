@@ -34,5 +34,5 @@ elem = driver.find_elements(By.XPATH, "//span [@class='gvxzyvdx aeinzg81 t7p7dqe
 for i in elem:
     print(i.text)
 time.sleep(5)
-driver.close()
+driver.quit()
 
