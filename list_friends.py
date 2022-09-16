@@ -35,4 +35,3 @@ for i in elem:
     print(i.text)
 time.sleep(5)
 driver.quit()
-
