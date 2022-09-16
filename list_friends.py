@@ -14,7 +14,8 @@ elem = driver.find_element(By.ID, "pass")
 elem.send_keys(ps)
 elem = driver.find_element(By.NAME, "login")
 elem.click()
-time.sleep(1)
+
+time.sleep(5)
 driver.get("https://www.facebook.com/profile.php?id=100034077260467&sk=friends")
 time.sleep(5)
 while True:
