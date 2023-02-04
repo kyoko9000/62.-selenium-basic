@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from info import ids, ps
+from info import id, ps
 
 # Creating Instance
 option = Options()
@@ -19,7 +19,7 @@ driver = webdriver.Chrome(service=service, chrome_options= option)
 driver.get("https://www.facebook.com")
 time.sleep(1)
 elem = driver.find_element(By.ID, "email")
-elem.send_keys(ids)
+elem.send_keys(id)
 elem = driver.find_element(By.ID, "pass")
 elem.send_keys(ps)
 elem = driver.find_element(By.NAME, "login")
