@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from info import id, ps
+from info import id, password
 
 # Creating Instance
 option = Options()
@@ -21,7 +21,7 @@ time.sleep(1)
 elem = driver.find_element(By.ID, "email")
 elem.send_keys(id)
 elem = driver.find_element(By.ID, "pass")
-elem.send_keys(ps)
+elem.send_keys(password)
 elem = driver.find_element(By.NAME, "login")
 elem.click()
 

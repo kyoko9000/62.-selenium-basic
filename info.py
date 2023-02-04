@@ -1,2 +1,2 @@
 id = "0393332707"
-ps = "h+S=/nt*=E4HELG"
+password = "h+S=/nt*=E4HELG"
